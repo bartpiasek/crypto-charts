@@ -1,11 +1,8 @@
 import "./App.css";
+import FetchData from "./components/cryptoAPI";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>crypto-charts</h1>
-    </div>
-  );
+  return <FetchData />;
 }
 
 export default App;
