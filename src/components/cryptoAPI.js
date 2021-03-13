@@ -35,11 +35,10 @@ const FetchData = () => {
           <input type="text" placeholder="Search" onChange={handleChange} />
         </form>
       </div>
-      <Header />
       {filteredCoins.map((coin) => {
         return (
           <Coin
-            className="layout__header"
+            className="layout__rows"
             key={coin.id}
             name={coin.name}
             image={coin.image}

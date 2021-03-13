@@ -14,6 +14,11 @@ code {
 .layout__header {
   position: fixed;
   align-items: flex-start;
+  top: 0;
+}
+.layout__rows {
+  position: fixed;
+  align-items: flex-start;
 }
 
 .layout__section {
