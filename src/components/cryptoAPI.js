@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Coin from "./coin";
+import Header from "./header";
 
 const FetchData = () => {
   const [coins, setCoins] = useState([]);
@@ -27,16 +28,18 @@ const FetchData = () => {
 
   return (
     <div>
-      <div>
+      <div className="layout__header">
         <h1>HODL</h1>
         <h3>Search currency</h3>
         <form>
           <input type="text" placeholder="Search" onChange={handleChange} />
         </form>
       </div>
+      <Header />
       {filteredCoins.map((coin) => {
         return (
           <Coin
+            className="layout__header"
             key={coin.id}
             name={coin.name}
             image={coin.image}
