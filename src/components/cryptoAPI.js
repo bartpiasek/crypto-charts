@@ -27,7 +27,7 @@ const FetchData = () => {
   );
 
   return (
-    <div>
+    <div className="layout__main">
       <div className="layout__header">
         <h1>HODL</h1>
         <h3>Search currency</h3>
@@ -42,7 +42,10 @@ const FetchData = () => {
             key={coin.id}
             name={coin.name}
             image={coin.image}
-            price={coin.price}
+            price={coin.current_price}
+            marketcap={coin.market_cap}
+            priceChange={coin.price_change_percentage_24h}
+            volume={coin.total_volume}
           />
         );
       })}
