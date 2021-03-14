@@ -1,11 +1,11 @@
 import "./App.css";
 import FetchData from "./components/cryptoAPI";
-import DarkModeToggle from "./components/darkmode/DarkModeToggle";
+import Header from "./components/header";
 
 function App() {
   return (
     <div>
-      <DarkModeToggle />
+      <Header />
       <FetchData />
     </div>
   );

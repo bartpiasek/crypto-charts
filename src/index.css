@@ -12,8 +12,8 @@ code {
     monospace;
 }
 body.light-mode {
-  background-color: #fff;
-  color: #333;
+  background-color: #fafafa;
+  color: #1b1b1b;
   transition: background-color 0.3s ease;
 }
 
@@ -21,14 +21,18 @@ body.dark-mode {
   background-color: #1b1b1b;
   color: #dfdfdf;
 }
+.layout__main {
+  margin: 1rem;
+  padding: 5%;
+}
 
 .layout__header {
+  width: 100%;
   position: fixed;
   align-items: flex-start;
-  top: 0;
-}
-.layout__main {
-  /* display: flex; */
+  top: 1rem;
+  margin-bottom: 10rem;
+  /* z-index: 1; */
 }
 .layout__rows {
   position: fixed;
