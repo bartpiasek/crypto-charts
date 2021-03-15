@@ -1,4 +1,3 @@
-import "./App.css";
 import FetchData from "./components/cryptoAPI";
 import Header from "./components/header";
 

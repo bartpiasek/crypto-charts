@@ -33,11 +33,6 @@ const FetchData = () => {
         <form>
           <input type="text" placeholder="Search" onChange={handleChange} />
         </form>
-        <h3>Price</h3>
-        <h3>%</h3>
-        <h3>Price</h3>
-        <h3>Market cap</h3>
-        <h3>Volume</h3>
       </div>
       {filteredCoins.map((coin) => {
         return (
