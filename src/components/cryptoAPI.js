@@ -30,15 +30,18 @@ const FetchData = () => {
     <div className="layout__main">
       <div className="layout__header">
         <h1>HODL</h1>
-        <h3>Search currency</h3>
         <form>
           <input type="text" placeholder="Search" onChange={handleChange} />
         </form>
+        <h3>Price</h3>
+        <h3>%</h3>
+        <h3>Price</h3>
+        <h3>Market cap</h3>
+        <h3>Volume</h3>
       </div>
       {filteredCoins.map((coin) => {
         return (
           <Coin
-            className="layout__rows"
             key={coin.id}
             name={coin.name}
             image={coin.image}
