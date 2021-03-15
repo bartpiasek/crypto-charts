@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Coin from "./coin";
-import Header from "./header";
 
 const FetchData = () => {
   const [coins, setCoins] = useState([]);

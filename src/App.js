@@ -1,12 +1,13 @@
 import FetchData from "./components/cryptoAPI";
-import Header from "./components/header";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import Header from "./components/UI/header";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
       <FetchData />
-    </div>
+    </Router>
   );
 }
 

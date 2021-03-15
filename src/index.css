@@ -116,18 +116,13 @@ body.dark-mode {
 .layout__main {
   margin: 1rem;
   padding: 5%;
-  justify-content: space-between;
 }
 
 .layout__header {
   width: 100%;
   position: fixed;
-  align-items: flex-start;
   top: 1rem;
   margin-bottom: 10rem;
-  /* z-index: 1; */
-  justify-content: space-between;
-  flex-direction: row;
 }
 
 .layout__section {
